@@ -1,0 +1,32 @@
+# Use Case: Maintenance Use Case of the IceModule
+Description | Explanation
+--- | ---
+Short Description | Refill of the ice storage in production mode.
+Goal | Ice storage gets refilled.
+Person involved | Maintenance personell.
+Trigger | Ice storage is empty.
+Precondition | Module operational.
+Postcondition | Ice storage full and module operational.
+Date and Version | 2015-06-01 - V0.1
+
+----
+## Normal use case:
+Step | Action
+--- | ---
+1 | Sensor detects, that the ice storage is empty.
+2 | Maintenance personell (“Actor”) gets notified via the HMI.
+3 | Actor acknowledges the maintenance task on the HMI.
+4 | Actor refills the ice storage.
+5 | Actor acknowledges the maintenance action on the HMI.
+6 | Module recalibrates it's storage level via the sensor.
+7 | Storage level is within operating range.
+8 | Normal operation mode continues.
+## Alternative use case:
+Step | Action
+--- | ---
+3a | Actor denies maintenance task.
+3a1 | Operator will be notified via remote cloud link.
+3a2 | Module goes into defined error state 'ERROR_OPERATOR'.
+ | 
+7a | Storage level is not within operating range. (Too full is not possible)
+7a1 | Goto 1
