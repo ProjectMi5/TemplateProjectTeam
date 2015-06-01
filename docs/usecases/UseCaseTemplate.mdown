@@ -1,0 +1,29 @@
+# Use Case: ...
+Description | Explanation
+--- | ---
+Short Description | ...
+Goal | ...
+Person involved | ... 
+Trigger | ...
+Precondition | ...
+Postcondition | ... 
+Date and Version | yyyy-mm-dd v0.1
+
+----
+## Normal use case:
+Step | Action
+--- | ---
+1 | 
+2 |
+3 | 
+4 |
+.. |
+## Alternative use case:
+Step | Action
+--- | ---
+1a | 
+1a1 |
+2a | 
+3a |
+.. |
+
