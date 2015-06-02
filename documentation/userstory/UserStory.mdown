@@ -1,5 +1,4 @@
 # User Story
-## Template
 ### Description
 As an [*end user role*], I want [*the desire*] so that [*the rationale*].
 
